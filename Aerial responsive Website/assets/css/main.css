@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
-
 html,
 body,
 div,
@@ -183,7 +182,6 @@ body.is-preload *:after {
   -ms-transition: none !important;
   transition: none !important;
 }
-
 body,
 input,
 select,
@@ -195,7 +193,6 @@ textarea {
   letter-spacing: -0.025em;
   line-height: 1.75em;
 }
-
 a {
   -moz-transition: border-color 0.2s ease-in-out;
   -webkit-transition: border-color 0.2s ease-in-out;
@@ -254,7 +251,6 @@ a:hover {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes wrapper {
   0% {
     opacity: 0;
