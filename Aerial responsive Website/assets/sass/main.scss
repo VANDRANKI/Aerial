@@ -40,10 +40,8 @@
 	$delay-header:			$delay-overlay + _duration(overlay) - 0.75s;
 	$delay-nav-icons:		$delay-header + _duration(header) - 1s;
 	$delay-nav-icon:		0.25s;
-
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
-
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 	pre, a, abbr, acronym, address, big, cite,
@@ -62,20 +60,16 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
-
 	article, aside, details, figcaption, figure,
 	footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
-
 	body {
 		line-height: 1;
 	}
-
 	ol, ul {
 		list-style:none;
 	}
-
 	blockquote,	q {
 		quotes: none;
 
@@ -85,36 +79,29 @@
 			content: none;
 		}
 	}
-
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-
 	body {
 		-webkit-text-size-adjust: none;
 	}
-
 	mark {
 		background-color: transparent;
 		color: inherit;
 	}
-
 	input::-moz-focus-inner {
 		border: 0;
 		padding: 0;
 	}
-
 	input, select, textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
 	}
-
 /* Basic */
-
-	// Set box model to border-box.
+	// Set to border box and store it in the main css file 
 	// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
 		html {
 			box-sizing: border-box;
@@ -135,9 +122,7 @@
 					@include vendor('transition', 'none !important');
 				}
 			}
-
 	}
-
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: 'Source Sans Pro', sans-serif;
@@ -146,7 +131,6 @@
 		letter-spacing: -0.025em;
 		line-height: 1.75em;
 	}
-
 	a {
 		@include vendor('transition', 'border-color 0.2s ease-in-out');
 		border-bottom: dotted 1px;
@@ -158,9 +142,7 @@
 			border-color: transparent;
 		}
 	}
-
 /* Icon */
-
 	.icon {
 		@include icon;
 		position: relative;
@@ -298,7 +280,6 @@
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
 		}
-
 		nav {
 			margin: 1.5em 0 0 0;
 
@@ -320,7 +301,6 @@
 					}
 				}
 			}
-
 			a {
 				-webkit-tap-highlight-color: rgba(0,0,0,0);
 				-webkit-touch-callout: none;
@@ -340,7 +320,6 @@
 					top: 0;
 					width: 2.5em;
 				}
-
 				&:hover {
 					font-size: 1.1em;
 
@@ -368,7 +347,6 @@
 	}
 
 /* Footer */
-
 	#footer {
 		@include vendor('background-image', 'linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%)');
 		bottom: 0;
