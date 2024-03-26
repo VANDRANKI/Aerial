@@ -38,8 +38,6 @@ The Scrolling Background:
 		Set the value of $bg to the page background color, URL, and placement
 		of your image. Change $bg-width if your image is something other than
 		1500px wide.
-
-
 Credits:
 
 	Background Image:
