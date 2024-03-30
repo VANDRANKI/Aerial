@@ -3,15 +3,11 @@
 /// @param {string} $category Optional category to use.
 /// @param {string} $where Optional pseudoelement to target (before or after).
 @mixin icon($content: false, $category: regular, $where: before) {
-
 	text-decoration: none;
-
 	&:#{$where} {
-
 		@if $content {
 			content: $content;
 		}
-
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 		display: inline-block;
@@ -20,7 +16,6 @@
 		text-rendering: auto;
 		line-height: 1;
 		text-transform: none !important;
-
 		@if ($category == brands) {
 			font-family: 'Font Awesome 5 Brands';
 		}
@@ -32,11 +27,9 @@
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
 		}
-
 	}
 
 }
-
 /// Applies padding to an element, taking the current element-margin value into account.
 /// @param {mixed} $tb Top/bottom padding.
 /// @param {mixed} $lr Left/right padding.
