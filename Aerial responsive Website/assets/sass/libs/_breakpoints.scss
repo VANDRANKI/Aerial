@@ -1,19 +1,14 @@
 // breakpoints.scss v1.0 | @ajlkn | MIT licensed */
-
 // Vars.
-
 	/// Breakpoints.
 	/// @var {list}
 	$breakpoints: () !global;
-
 // Mixins.
-
 	/// Sets breakpoints.
 	/// @param {map} $x Breakpoints.
 	@mixin breakpoints($x: ()) {
 		$breakpoints: $x !global;
 	}
-
 	/// Wraps @content in a @media block targeting a specific orientation.
 	/// @param {string} $orientation Orientation.
 	@mixin orientation($orientation) {
@@ -21,60 +16,40 @@
 			@content;
 		}
 	}
-
 	/// Wraps @content in a @media block using a given query.
 	/// @param {string} $query Query.
 	@mixin breakpoint($query: null) {
-
 		$breakpoint: null;
 		$op: null;
 		$media: null;
-
 		// Determine operator, breakpoint.
-
 			// Greater than or equal.
 				@if (str-slice($query, 0, 2) == '>=') {
-
 					$op: 'gte';
 					$breakpoint: str-slice($query, 3);
-
 				}
-
 			// Less than or equal.
 				@elseif (str-slice($query, 0, 2) == '<=') {
-
 					$op: 'lte';
 					$breakpoint: str-slice($query, 3);
-
 				}
-
 			// Greater than.
 				@elseif (str-slice($query, 0, 1) == '>') {
-
 					$op: 'gt';
 					$breakpoint: str-slice($query, 2);
-
 				}
-
 			// Less than.
 				@elseif (str-slice($query, 0, 1) == '<') {
-
 					$op: 'lt';
 					$breakpoint: str-slice($query, 2);
-
 				}
-
 			// Not.
 				@elseif (str-slice($query, 0, 1) == '!') {
-
 					$op: 'not';
 					$breakpoint: str-slice($query, 2);
-
 				}
-
 			// Equal.
 				@else {
-
 					$op: 'eq';
 					$breakpoint: $query;
 
