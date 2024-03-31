@@ -5,13 +5,11 @@
 @import 'libs/breakpoints';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
-
 /*
 	Aerial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
 // Breakpoints.
 
 	@include breakpoints((
@@ -20,21 +18,17 @@
 		mobile:    ( 481px,   736px  ),
 		mobilep:   ( null,    480px  )
 	));
-
 // Mixins.
-
 	@mixin bg($width) {
 		@include keyframes('bg') {
 			0%		{ @include vendor('transform', 'translate3d(0,0,0)'); }
 			100%	{ @include vendor('transform', 'translate3d(#{$width * -1},0,0)'); }
 		}
-
 		#bg {
 			background-size: $width auto;
 			width: ($width * 3);
 		}
 	}
-
 	$delay-wrapper:			_duration(wrapper) - 1s;
 	$delay-overlay:			$delay-wrapper - 0.5s;
 	$delay-header:			$delay-overlay + _duration(overlay) - 0.75s;
@@ -110,7 +104,6 @@
 		*, *:before, *:after {
 			box-sizing: inherit;
 		}
-
 	body {
 		background: _palette(bg);
 		overflow: hidden;
@@ -163,14 +156,12 @@
 			}
 		}
 	}
-
 /* Wrapper */
 
 	@include keyframes('wrapper') {
 		0%		{ opacity: 0; }
 		100%	{ opacity: 1; }
 	}
-
 	#wrapper {
 		@include vendor('animation', 'wrapper #{_duration(wrapper)} forwards');
 		height: 100%;
@@ -180,9 +171,7 @@
 		top: 0;
 		width: 100%;
 	}
-
 /* BG */
-
 	#bg {
 		@include vendor('animation', 'bg #{_duration(bg)} linear infinite');
 		@include vendor('backface-visibility', 'hidden');
@@ -198,16 +187,12 @@
 		position: fixed;
 		top: 0;
 	}
-
 	@include bg(_misc(bg-width) * 1.5);
-
 /* Overlay */
-
 	@include keyframes('overlay') {
 		0%		{ opacity: 0; }
 		100%	{ opacity: 1; }
 	}
-
 	#overlay {
 		@include vendor('animation', 'overlay #{_duration(overlay)} #{$delay-overlay} forwards');
 		background-attachment: fixed, fixed;
@@ -222,9 +207,7 @@
 		top: 0;
 		width: 100%;
 	}
-
 /* Main */
-
 	#main {
 		height: 100%;
 		left: 0;
@@ -232,7 +215,6 @@
 		text-align: center;
 		top: 0;
 		width: 100%;
-
 		&:before {
 			content: '';
 			display: inline-block;
@@ -242,19 +224,15 @@
 			width: 1px;
 		}
 	}
-
 /* Header */
-
 	@include keyframes('header') {
 		0%		{ @include vendor('transform', 'translate3d(0,1em,0)'); opacity: 0; }
 		100%	{ @include vendor('transform', 'translate3d(0,0,0)'); opacity: 1; }
 	}
-
 	@include keyframes('nav-icons') {
 		0%		{ @include vendor('transform', 'translate3d(0,1em,0)'); opacity: 0; }
 		100%	{ @include vendor('transform', 'translate3d(0,0,0)'); opacity: 1; }
 	}
-
 	#header {
 		@include vendor('animation', 'header #{_duration(header)} #{$delay-header} forwards');
 		@include vendor('backface-visibility', 'hidden');
@@ -267,14 +245,12 @@
 		top: -1em;
 		vertical-align: middle;
 		width: 90%;
-
 		h1 {
 			font-size: 4.35em;
 			font-weight: 900;
 			letter-spacing: -0.035em;
 			line-height: 1em;
 		}
-
 		p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
@@ -282,7 +258,6 @@
 		}
 		nav {
 			margin: 1.5em 0 0 0;
-
 			li {
 				@include vendor('animation', 'nav-icons #{_duration(nav-icons)} ease-in-out forwards');
 				@include vendor('backface-visibility', 'hidden');
@@ -306,7 +281,6 @@
 				-webkit-touch-callout: none;
 				border: 0;
 				display: inline-block;
-
 				&:before {
 					@include vendor('transition', 'all 0.2s ease-in-out');
 					border-radius: 100%;
@@ -332,20 +306,17 @@
 				&:active {
 					font-size: 0.95em;
 					background: none;
-
 					&:before {
 						background-color: _palette(nav-icon, active-bg);
 						color: _palette(nav-icon, active-fg);
 					}
 				}
-
 				span {
 					display: none;
 				}
 			}
 		}
 	}
-
 /* Footer */
 	#footer {
 		@include vendor('background-image', 'linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%)');
@@ -358,25 +329,16 @@
 		text-align: center;
 		width: 100%;
 	}
-
 /* Wide */
-
 	@include breakpoint('<=wide') {
-
 		/* Basic */
-
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
-
 		/* BG */
-
 			@include bg(_misc(bg-width));
-
 	}
-
 /* Normal */
-
 	@include breakpoint('<=normal') {
 
 		/* Basic */
