@@ -1,7 +1,5 @@
 // vendor.scss v1.0 | @ajlkn | MIT licensed */
-
 // Vars.
-
 	/// Vendor prefixes.
 	/// @var {list}
 	$vendor-prefixes: (
@@ -10,12 +8,10 @@
 		'-ms-',
 		''
 	);
-
 	/// Properties that should be vendorized.
 	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
 	/// @var {list}
 	$vendor-properties: (
-
 		// Animation.
 			'animation',
 			'animation-delay',
@@ -26,27 +22,20 @@
 			'animation-name',
 			'animation-play-state',
 			'animation-timing-function',
-
 		// Appearance.
 			'appearance',
-
 		// Backdrop filter.
 			'backdrop-filter',
-
 		// Background image options.
 			'background-clip',
 			'background-origin',
 			'background-size',
-
 		// Box sizing.
 			'box-sizing',
-
 		// Clip path.
 			'clip-path',
-
 		// Filter effects.
 			'filter',
-
 		// Flexbox.
 			'align-content',
 			'align-items',
@@ -60,18 +49,14 @@
 			'flex-wrap',
 			'justify-content',
 			'order',
-
 		// Font feature.
 			'font-feature-settings',
 			'font-language-override',
 			'font-variant-ligatures',
-
 		// Font kerning.
 			'font-kerning',
-
 		// Fragmented borders and backgrounds.
 			'box-decoration-break',
-
 		// Grid layout.
 			'grid-column',
 			'grid-column-align',
@@ -83,11 +68,9 @@
 			'grid-row-start',
 			'grid-template-columns',
 			'grid-template-rows',
-
 		// Hyphens.
 			'hyphens',
 			'word-break',
-
 		// Masks.
 			'mask',
 			'mask-border',
@@ -103,7 +86,6 @@
 			'mask-position',
 			'mask-repeat',
 			'mask-size',
-
 		// Multicolumn.
 			'break-after',
 			'break-before',
@@ -118,46 +100,37 @@
 			'column-span',
 			'column-width',
 			'columns',
-
 		// Object fit.
 			'object-fit',
 			'object-position',
-
 		// Regions.
 			'flow-from',
 			'flow-into',
 			'region-fragment',
-
 		// Scroll snap points.
 			'scroll-snap-coordinate',
 			'scroll-snap-destination',
 			'scroll-snap-points-x',
 			'scroll-snap-points-y',
 			'scroll-snap-type',
-
 		// Shapes.
 			'shape-image-threshold',
 			'shape-margin',
 			'shape-outside',
-
 		// Tab size.
 			'tab-size',
-
 		// Text align last.
 			'text-align-last',
-
 		// Text decoration.
 			'text-decoration-color',
 			'text-decoration-line',
 			'text-decoration-skip',
 			'text-decoration-style',
-
 		// Text emphasis.
 			'text-emphasis',
 			'text-emphasis-color',
 			'text-emphasis-position',
 			'text-emphasis-style',
-
 		// Text size adjust.
 			'text-size-adjust',
 
