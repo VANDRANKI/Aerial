@@ -11,7 +11,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 // Breakpoints.
-
 	@include breakpoints((
 		wide:      ( 1281px,  1680px ),
 		normal:    ( 737px,   1280px ),
@@ -368,9 +367,7 @@
 			}
 
 		/* BG */
-
 			@include bg(_misc(bg-width) * 0.2);
-
 		/* Header */
 
 			#header {
@@ -389,18 +386,14 @@
 						&:hover {
 							font-size: 1em;
 						}
-
 						&:active {
 							font-size: 1em;
 						}
 					}
 				}
 			}
-
 	}
-
 /* Mobile (Portrait) */
-
 	@include breakpoint('<=mobilep') {
 
 		/* BG */
@@ -414,5 +407,4 @@
 					padding: 0 1em;
 				}
 			}
-
 	}
