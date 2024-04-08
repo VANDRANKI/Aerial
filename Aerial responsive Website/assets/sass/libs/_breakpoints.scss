@@ -65,60 +65,47 @@
 
 						$x: nth($a, 1);
 						$y: nth($a, 2);
-
 						// Max only.
 							@if ($x == null) {
-
 								// Greater than or equal (>= 0 / anything)
 									@if ($op == 'gte') {
 										$media: 'screen';
 									}
-
 								// Less than or equal (<= y)
 									@elseif ($op == 'lte') {
 										$media: 'screen and (max-width: ' + $y + ')';
 									}
-
 								// Greater than (> y)
 									@elseif ($op == 'gt') {
 										$media: 'screen and (min-width: ' + ($y + 1) + ')';
 									}
-
 								// Less than (< 0 / invalid)
 									@elseif ($op == 'lt') {
 										$media: 'screen and (max-width: -1px)';
 									}
-
 								// Not (> y)
 									@elseif ($op == 'not') {
 										$media: 'screen and (min-width: ' + ($y + 1) + ')';
 									}
-
 								// Equal (<= y)
 									@else {
 										$media: 'screen and (max-width: ' + $y + ')';
 									}
-
 							}
-
 						// Min only.
 							@else if ($y == null) {
-
 								// Greater than or equal (>= x)
 									@if ($op == 'gte') {
 										$media: 'screen and (min-width: ' + $x + ')';
 									}
-
 								// Less than or equal (<= inf / anything)
 									@elseif ($op == 'lte') {
 										$media: 'screen';
 									}
-
 								// Greater than (> inf / invalid)
 									@elseif ($op == 'gt') {
 										$media: 'screen and (max-width: -1px)';
 									}
-
 								// Less than (< x)
 									@elseif ($op == 'lt') {
 										$media: 'screen and (max-width: ' + ($x - 1) + ')';
