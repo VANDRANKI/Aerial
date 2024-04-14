@@ -88,7 +88,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 article,
 aside,
 details,
@@ -102,21 +101,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -124,26 +119,21 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 body {
   -webkit-text-size-adjust: none;
 }
-
 mark {
   background-color: transparent;
   color: inherit;
 }
-
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-
 input,
 select,
 textarea {
@@ -152,24 +142,19 @@ textarea {
   -ms-appearance: none;
   appearance: none;
 }
-
 /* Basic */
-
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
 body {
   background: #fff;
   overflow: hidden;
 }
-
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
@@ -203,18 +188,14 @@ a {
   outline: 0;
   text-decoration: none;
 }
-
 a:hover {
   border-color: transparent;
 }
-
 /* Icon */
-
 .icon {
   text-decoration: none;
   position: relative;
 }
-
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -227,26 +208,20 @@ a:hover {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
 }
-
 .icon > .label {
   display: none;
 }
-
 .icon.solid:before {
   font-weight: 900;
 }
-
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
 }
-
 /* Wrapper */
-
 @-moz-keyframes wrapper {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -255,32 +230,26 @@ a:hover {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @-ms-keyframes wrapper {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @keyframes wrapper {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 #wrapper {
   -moz-animation: wrapper 3s forwards;
   -webkit-animation: wrapper 3s forwards;
@@ -293,9 +262,7 @@ a:hover {
   top: 0;
   width: 100%;
 }
-
 /* BG */
-
 #bg {
   -moz-animation: bg 60s linear infinite;
   -webkit-animation: bg 60s linear infinite;
@@ -310,7 +277,6 @@ a:hover {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   /* Set your background with this */
-
   background: #348cb2 url("images/bg.jpg") bottom left;
   background-repeat: repeat-x;
   height: 100%;
@@ -319,7 +285,6 @@ a:hover {
   position: fixed;
   top: 0;
 }
-
 @-moz-keyframes bg {
   0% {
     -moz-transform: translate3d(0, 0, 0);
@@ -327,7 +292,6 @@ a:hover {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     -moz-transform: translate3d(-2250px, 0, 0);
     -webkit-transform: translate3d(-2250px, 0, 0);
@@ -335,7 +299,6 @@ a:hover {
     transform: translate3d(-2250px, 0, 0);
   }
 }
-
 @-webkit-keyframes bg {
   0% {
     -moz-transform: translate3d(0, 0, 0);
@@ -343,7 +306,6 @@ a:hover {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     -moz-transform: translate3d(-2250px, 0, 0);
     -webkit-transform: translate3d(-2250px, 0, 0);
@@ -351,7 +313,6 @@ a:hover {
     transform: translate3d(-2250px, 0, 0);
   }
 }
-
 @-ms-keyframes bg {
   0% {
     -moz-transform: translate3d(0, 0, 0);
@@ -359,7 +320,6 @@ a:hover {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     -moz-transform: translate3d(-2250px, 0, 0);
     -webkit-transform: translate3d(-2250px, 0, 0);
@@ -367,7 +327,6 @@ a:hover {
     transform: translate3d(-2250px, 0, 0);
   }
 }
-
 @keyframes bg {
   0% {
     -moz-transform: translate3d(0, 0, 0);
