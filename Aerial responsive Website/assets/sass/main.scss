@@ -5,11 +5,6 @@
 @import 'libs/breakpoints';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
-/*
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 // Breakpoints.
 	@include breakpoints((
 		wide:      ( 1281px,  1680px ),
@@ -106,7 +101,6 @@
 	body {
 		background: _palette(bg);
 		overflow: hidden;
-
 		// Stops initial animations until page loads.
 			&.is-preload {
 				*, *:before, *:after {
@@ -129,7 +123,6 @@
 		color: inherit;
 		outline: 0;
 		text-decoration: none;
-
 		&:hover {
 			border-color: transparent;
 		}
@@ -138,11 +131,9 @@
 	.icon {
 		@include icon;
 		position: relative;
-
 		> .label {
 			display: none;
 		}
-
 		&.solid {
 			&:before {
 				font-weight: 900;
@@ -156,7 +147,6 @@
 		}
 	}
 /* Wrapper */
-
 	@include keyframes('wrapper') {
 		0%		{ opacity: 0; }
 		100%	{ opacity: 1; }
@@ -175,10 +165,8 @@
 		@include vendor('animation', 'bg #{_duration(bg)} linear infinite');
 		@include vendor('backface-visibility', 'hidden');
 		@include vendor('transform', 'translate3d(0,0,0)');
-
 		/* Set your background with this */
 		background: _misc(bg);
-
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
