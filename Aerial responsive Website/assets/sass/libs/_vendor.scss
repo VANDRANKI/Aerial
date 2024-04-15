@@ -133,73 +133,54 @@
 			'text-emphasis-style',
 		// Text size adjust.
 			'text-size-adjust',
-
 		// Text spacing.
 			'text-spacing',
-
 		// Transform.
 			'transform',
 			'transform-origin',
-
 		// Transform 3D.
 			'backface-visibility',
 			'perspective',
 			'perspective-origin',
 			'transform-style',
-
 		// Transition.
 			'transition',
 			'transition-delay',
 			'transition-duration',
 			'transition-property',
 			'transition-timing-function',
-
 		// Unicode bidi.
 			'unicode-bidi',
-
 		// User select.
 			'user-select',
-
 		// Writing mode.
 			'writing-mode',
-
 	);
-
 	/// Values that should be vendorized.
-	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
 	/// @var {list}
 	$vendor-values: (
-
 		// Cross fade.
 			'cross-fade',
-
 		// Element function.
 			'element',
-
 		// Filter function.
 			'filter',
-
 		// Flexbox.
 			'flex',
 			'inline-flex',
-
 		// Grab cursors.
 			'grab',
 			'grabbing',
-
 		// Gradients.
 			'linear-gradient',
 			'repeating-linear-gradient',
 			'radial-gradient',
 			'repeating-radial-gradient',
-
 		// Grid layout.
 			'grid',
 			'inline-grid',
-
 		// Image set.
 			'image-set',
-
 		// Intrinsic width.
 			'max-content',
 			'min-content',
@@ -207,19 +188,14 @@
 			'fill',
 			'fill-available',
 			'stretch',
-
 		// Sticky position.
 			'sticky',
-
 		// Transform.
 			'transform',
-
 		// Zoom cursors.
 			'zoom-in',
 			'zoom-out',
-
 	);
-
 // Functions.
 
 	/// Removes a specific item from a list.
